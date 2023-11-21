@@ -10,8 +10,4 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/inputs")
 public class InputController implements InputApi {
 
-    @Override
-    public ResponseEntity<String> sayHello() {
-        return new ResponseEntity<>("Hello World ...", HttpStatus.OK);
-    }
 }
