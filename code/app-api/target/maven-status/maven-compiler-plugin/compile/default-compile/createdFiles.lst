@@ -1,2 +1,6 @@
 com/solutionesone/app/controller/InputController.class
+com/solutionesone/app/service/dto/InputDTO.class
 com/solutionesone/app/service/InputApi.class
+com/solutionesone/app/service/dto/OperationResponse.class
+com/solutionesone/app/service/dto/InputDTO$InputDTOBuilder.class
+com/solutionesone/app/service/dto/OperationResponse$OperationResponseBuilder.class
