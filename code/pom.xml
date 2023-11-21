@@ -16,6 +16,9 @@
   <modules>
     <module>app-api</module>
     <module>app-boot</module>
+    <module>app-application</module>
+    <module>app-domain</module>
+    <module>app-Infrastructure</module>
   </modules>
 
   <properties>
@@ -32,7 +35,22 @@
       <dependency>
         <groupId>com.solutionesone.app</groupId>
         <artifactId>app-boot</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.solutionesone.app</groupId>
+        <artifactId>app-application</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.solutionesone.app</groupId>
+        <artifactId>app-domain</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.solutionesone.app</groupId>
+        <artifactId>app-Infrastructure</artifactId>
+        <version>${project.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
