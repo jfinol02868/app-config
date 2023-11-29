@@ -2,6 +2,7 @@ package com.solutionesone.app.service.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
@@ -9,11 +10,13 @@ import java.io.Serializable;
 
 @Data
 @Builder
+@AllArgsConstructor
 public class InputDTO implements Serializable {
 
     @NotNull
-    private String id;
+    @Schema(example = "1")
     @NotNull
+    private String id;
     @Schema(example = "text")
     private String type;
     @Schema(example = "name")

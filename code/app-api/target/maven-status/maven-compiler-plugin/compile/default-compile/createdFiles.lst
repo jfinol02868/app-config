@@ -1,0 +1,8 @@
+com/solutionesone/app/controller/InputController.class
+com/solutionesone/app/service/InputApi.class
+com/solutionesone/app/service/dto/OperationResponse.class
+com/solutionesone/app/service/dto/OperationResponse$OperationResponseBuilder.class
+com/solutionesone/app/service/dto/InputDTO.class
+com/solutionesone/app/mapper/InputMapperImpl.class
+com/solutionesone/app/mapper/InputMapper.class
+com/solutionesone/app/service/dto/InputDTO$InputDTOBuilder.class

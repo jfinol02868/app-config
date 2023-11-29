@@ -10,8 +10,15 @@
     <artifactId>app-application</artifactId>
     <packaging>jar</packaging>
 
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.solutionesone.app</groupId>
+            <artifactId>app-domain</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
