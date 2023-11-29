@@ -1,0 +1,6 @@
+com/solutionesone/app/infrastructure/document/InputDocument.class
+com/solutionesone/app/infrastructure/repository/impl/InputRepositoryImpl.class
+com/solutionesone/app/infrastructure/mapper/InputMapperImpl.class
+com/solutionesone/app/infrastructure/repository/InputDocumentRepository.class
+com/solutionesone/app/infrastructure/document/InputDocument$InputDocumentBuilder.class
+com/solutionesone/app/infrastructure/mapper/InputMapper.class

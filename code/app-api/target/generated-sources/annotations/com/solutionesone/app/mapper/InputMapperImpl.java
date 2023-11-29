@@ -1,12 +1,12 @@
 package com.solutionesone.app.mapper;
 
-import com.solutionesone.app.entity.Input;
+import com.solutionesone.app.domain.entity.Input;
 import com.solutionesone.app.service.dto.InputDTO;
 import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-11-29T21:41:59+0100",
+    date = "2023-11-29T23:49:43+0100",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.8.1 (Private Build)"
 )
 public class InputMapperImpl implements InputMapper {

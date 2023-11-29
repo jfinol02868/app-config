@@ -1,6 +1,6 @@
 package com.solutionesone.app.useCase;
 
-import com.solutionesone.app.entity.Input;
+import com.solutionesone.app.domain.entity.Input;
 
 public interface InputUseCase {
 

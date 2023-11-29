@@ -1,6 +1,6 @@
-package com.solutionesone.app.repository;
+package com.solutionesone.app.domain.entity.repository;
 
-import com.solutionesone.app.entity.Input;
+import com.solutionesone.app.domain.entity.Input;
 
 public interface InputRepository {
 

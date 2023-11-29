@@ -1,4 +1,4 @@
-package com.solutionesone.app.entity;
+package com.solutionesone.app.domain.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,6 +1,6 @@
 package com.solutionesone.app.input.mappers;
 
-import com.solutionesone.app.entity.Input;
+import com.solutionesone.app.domain.entity.Input;
 import com.solutionesone.app.mapper.InputMapper;
 import com.solutionesone.app.service.dto.InputDTO;
 import org.junit.Test;

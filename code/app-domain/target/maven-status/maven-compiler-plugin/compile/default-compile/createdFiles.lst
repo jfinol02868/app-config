@@ -1,2 +1,3 @@
-com/solutionesone/app/entity/Input$InputBuilder.class
-com/solutionesone/app/entity/Input.class
+com/solutionesone/app/domain/entity/Input.class
+com/solutionesone/app/domain/entity/repository/InputRepository.class
+com/solutionesone/app/domain/entity/Input$InputBuilder.class
