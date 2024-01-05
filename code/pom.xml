@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.1.2</version>
+    <version>3.2.1  </version>
     <relativePath/>
   </parent>
 
@@ -37,11 +37,6 @@
       </dependency>
       <dependency>
         <groupId>com.solutionesone.app</groupId>
-        <artifactId>app-boot</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.solutionesone.app</groupId>
         <artifactId>app-application</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -52,7 +47,7 @@
       </dependency>
       <dependency>
         <groupId>com.solutionesone.app</groupId>
-        <artifactId>app-Infrastructure</artifactId>
+        <artifactId>app-infrastructure</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>

@@ -1,2 +1,3 @@
-/home/jfinol02/Documentos/develop/back/app-config/code/app-domain/src/main/java/com/solutionesone/app/domain/entity/repository/InputRepository.java
-/home/jfinol02/Documentos/develop/back/app-config/code/app-domain/src/main/java/com/solutionesone/app/domain/entity/Input.java
+/home/jfinol02/Documentos/dev/app-config/code/app-domain/src/main/java/com/solutionesone/app/domain/entity/repository/InputRepository.java
+/home/jfinol02/Documentos/dev/app-config/code/app-domain/src/main/java/com/solutionesone/app/domain/exception/EntityNotFoundException.java
+/home/jfinol02/Documentos/dev/app-config/code/app-domain/src/main/java/com/solutionesone/app/domain/entity/Input.java

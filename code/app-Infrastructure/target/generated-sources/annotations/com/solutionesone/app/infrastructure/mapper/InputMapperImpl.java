@@ -2,12 +2,14 @@ package com.solutionesone.app.infrastructure.mapper;
 
 import com.solutionesone.app.domain.entity.Input;
 import com.solutionesone.app.infrastructure.document.InputDocument;
+import java.util.ArrayList;
+import java.util.List;
 import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-11-30T00:03:49+0100",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.8.1 (Private Build)"
+    date = "2024-01-05T16:49:06+0100",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.9 (Private Build)"
 )
 public class InputMapperImpl implements InputMapper {
 
@@ -65,5 +67,33 @@ public class InputMapperImpl implements InputMapper {
         input.method( inputDocument.getMethod() );
 
         return input.build();
+    }
+
+    @Override
+    public List<InputDocument> toDocuments(List<Input> inputs) {
+        if ( inputs == null ) {
+            return null;
+        }
+
+        List<InputDocument> list = new ArrayList<InputDocument>( inputs.size() );
+        for ( Input input : inputs ) {
+            list.add( toDocument( input ) );
+        }
+
+        return list;
+    }
+
+    @Override
+    public List<Input> toEntities(List<InputDocument> inputDocuments) {
+        if ( inputDocuments == null ) {
+            return null;
+        }
+
+        List<Input> list = new ArrayList<Input>( inputDocuments.size() );
+        for ( InputDocument inputDocument : inputDocuments ) {
+            list.add( toEntity( inputDocument ) );
+        }
+
+        return list;
     }
 }

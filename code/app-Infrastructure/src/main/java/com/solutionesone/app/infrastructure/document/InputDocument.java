@@ -1,16 +1,21 @@
 package com.solutionesone.app.infrastructure.document;
 
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.MongoId;
 
 import java.io.Serializable;
 
 @Data
 @Builder
 @AllArgsConstructor
+@Document(value = "inputs")
 public class InputDocument implements Serializable {
 
+    @Id
     private String id;
     private String type;
     private String name;

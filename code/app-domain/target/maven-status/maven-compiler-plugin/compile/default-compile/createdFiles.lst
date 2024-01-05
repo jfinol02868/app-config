@@ -1,3 +1,4 @@
+com/solutionesone/app/domain/exception/EntityNotFoundException.class
 com/solutionesone/app/domain/entity/Input.class
 com/solutionesone/app/domain/entity/repository/InputRepository.class
 com/solutionesone/app/domain/entity/Input$InputBuilder.class

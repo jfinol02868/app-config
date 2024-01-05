@@ -5,4 +5,5 @@ com/solutionesone/app/service/dto/OperationResponse$OperationResponseBuilder.cla
 com/solutionesone/app/service/dto/InputDTO.class
 com/solutionesone/app/mapper/InputMapperImpl.class
 com/solutionesone/app/mapper/InputMapper.class
+com/solutionesone/app/exception/RestResponseEntityExceptionHandler.class
 com/solutionesone/app/service/dto/InputDTO$InputDTOBuilder.class

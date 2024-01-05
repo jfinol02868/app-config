@@ -18,8 +18,8 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
         </processorPath>
+        <module name="app-infrastructure" />
         <module name="app-application" />
-        <module name="app-Infrastructure" />
         <module name="app-domain" />
         <module name="app-api" />
         <module name="app-boot" />
@@ -28,11 +28,11 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="app-Infrastructure" options="-parameters" />
       <module name="app-api" options="-parameters" />
       <module name="app-application" options="-parameters" />
       <module name="app-boot" options="-parameters" />
       <module name="app-domain" options="-parameters" />
+      <module name="app-infrastructure" options="-parameters" />
       <module name="code" options="-parameters" />
     </option>
   </component>

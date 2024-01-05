@@ -48,8 +48,8 @@ public interface InputApi {
     @ApiResponse(responseCode = "403", content = @Content(mediaType = CONTENT_RESPONSE, array = @ArraySchema(schema = @Schema(implementation = OperationResponse.class))))
     @ApiResponse(responseCode = "404", content = @Content(mediaType = CONTENT_RESPONSE, array = @ArraySchema(schema = @Schema(implementation = OperationResponse.class))))
     @ApiResponse(responseCode = "500", content = @Content(mediaType = CONTENT_RESPONSE, array = @ArraySchema(schema = @Schema(implementation = OperationResponse.class))))
-    default ResponseEntity<List<InputDTO>> getInputById(@PathVariable(name = "id", required = true) String id) {
-        return new ResponseEntity<List<InputDTO>>(HttpStatus.NOT_IMPLEMENTED);
+    default ResponseEntity<InputDTO> getInputById(@PathVariable(name = "id", required = true) String id) {
+        return new ResponseEntity<InputDTO>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     @PutMapping("/{id}")
@@ -60,8 +60,8 @@ public interface InputApi {
     @ApiResponse(responseCode = "403", content = @Content(mediaType = CONTENT_RESPONSE, array = @ArraySchema(schema = @Schema(implementation = OperationResponse.class))))
     @ApiResponse(responseCode = "404", content = @Content(mediaType = CONTENT_RESPONSE, array = @ArraySchema(schema = @Schema(implementation = OperationResponse.class))))
     @ApiResponse(responseCode = "500", content = @Content(mediaType = CONTENT_RESPONSE, array = @ArraySchema(schema = @Schema(implementation = OperationResponse.class))))
-    default ResponseEntity<List<InputDTO>> updateInput(@RequestBody InputDTO inputDTO) {
-        return new ResponseEntity<List<InputDTO>>(HttpStatus.NOT_IMPLEMENTED);
+    default ResponseEntity<InputDTO> updateInput(@RequestBody InputDTO inputDTO, @PathVariable String id) {
+        return new ResponseEntity<InputDTO>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     @DeleteMapping("/{id}")
@@ -72,7 +72,7 @@ public interface InputApi {
     @ApiResponse(responseCode = "403", content = @Content(mediaType = CONTENT_RESPONSE, array = @ArraySchema(schema = @Schema(implementation = OperationResponse.class))))
     @ApiResponse(responseCode = "404", content = @Content(mediaType = CONTENT_RESPONSE, array = @ArraySchema(schema = @Schema(implementation = OperationResponse.class))))
     @ApiResponse(responseCode = "500", content = @Content(mediaType = CONTENT_RESPONSE, array = @ArraySchema(schema = @Schema(implementation = OperationResponse.class))))
-    default ResponseEntity<List<InputDTO>> deleteInputById(@PathVariable String id) {
-        return new ResponseEntity<List<InputDTO>>(HttpStatus.NOT_IMPLEMENTED);
+    default ResponseEntity<Void> deleteInputById(@PathVariable String id) {
+        return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
     }
 }

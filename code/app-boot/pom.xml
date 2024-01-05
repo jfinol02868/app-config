@@ -29,7 +29,7 @@
         </dependency>
         <dependency>
             <groupId>com.solutionesone.app</groupId>
-            <artifactId>app-Infrastructure</artifactId>
+            <artifactId>app-infrastructure</artifactId>
         </dependency>
     </dependencies>
 </project>

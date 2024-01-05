@@ -8,6 +8,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 import static com.solutionesone.app.mapper.InputMapper.inputMapper;
 
 @RestController
@@ -24,5 +26,26 @@ public class InputController implements InputApi {
     public ResponseEntity<InputDTO> createInput(InputDTO inputDTO) {
         return new ResponseEntity<InputDTO>(
                 inputMapper.toDTO(inputUseCase.create(inputMapper.toEntity(inputDTO))), HttpStatus.CREATED);
+    }
+
+    @Override
+    public ResponseEntity<List<InputDTO>> getAllInputs() {
+        return new ResponseEntity<List<InputDTO>>(inputMapper.toDTOs(inputUseCase.getAllInputs()), HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<InputDTO> getInputById(String id) {
+        return new ResponseEntity<InputDTO>(inputMapper.toDTO(inputUseCase.getInputById(id)), HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<Void> deleteInputById(String id) {
+        return new ResponseEntity<Void>(inputUseCase.deleteInputById(id), HttpStatus.NO_CONTENT);
+    }
+
+    @Override
+    public ResponseEntity<InputDTO> updateInput(InputDTO inputDTO, String id) {
+        return new ResponseEntity<InputDTO>(
+                inputMapper.toDTO(inputUseCase.updateInput(id, inputMapper.toEntity(inputDTO))), HttpStatus.CREATED);
     }
 }

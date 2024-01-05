@@ -5,6 +5,8 @@ import com.solutionesone.app.service.dto.InputDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
+import java.util.List;
+
 @Mapper
 public interface InputMapper {
 
@@ -13,4 +15,8 @@ public interface InputMapper {
     public InputDTO toDTO(Input input);
 
     public Input toEntity(InputDTO inputDTO);
+
+    public List<InputDTO> toDTOs(List<Input> inputs);
+
+    public List<Input> toEntities(List<InputDTO> inputDTOs);
 }
