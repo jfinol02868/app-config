@@ -8,7 +8,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-01-11T18:25:36+0100",
+    date = "2024-01-11T18:47:04+0100",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.9 (Private Build)"
 )
 public class FormConfigDocumentMapperImpl implements FormConfigDocumentMapper {
@@ -39,9 +39,9 @@ public class FormConfigDocumentMapperImpl implements FormConfigDocumentMapper {
 
         FormConfig.FormConfigBuilder formConfig = FormConfig.builder();
 
-        formConfig.id( formConfigDocument.id() );
-        formConfig.configName( formConfigDocument.configName() );
-        List<String> list = formConfigDocument.inputIds();
+        formConfig.id( formConfigDocument.getId() );
+        formConfig.configName( formConfigDocument.getConfigName() );
+        List<String> list = formConfigDocument.getInputIds();
         if ( list != null ) {
             formConfig.inputIds( new ArrayList<String>( list ) );
         }
