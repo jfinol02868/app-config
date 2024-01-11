@@ -1,9 +1,15 @@
+com/solutionesone/app/controller/FormConfigController.class
+com/solutionesone/app/service/dto/FormConfigDTO.class
+com/solutionesone/app/mapper/InputMapper.class
+com/solutionesone/app/service/dto/InputDTO$InputDTOBuilder.class
+com/solutionesone/app/service/dto/FormConfigDTO$FormConfigDTOBuilder.class
 com/solutionesone/app/controller/InputController.class
 com/solutionesone/app/service/InputApi.class
+com/solutionesone/app/mapper/FormConfigMapperImpl.class
 com/solutionesone/app/service/dto/OperationResponse.class
 com/solutionesone/app/service/dto/OperationResponse$OperationResponseBuilder.class
+com/solutionesone/app/mapper/FormConfigMapper.class
 com/solutionesone/app/service/dto/InputDTO.class
 com/solutionesone/app/mapper/InputMapperImpl.class
-com/solutionesone/app/mapper/InputMapper.class
+com/solutionesone/app/service/FormConfigApi.class
 com/solutionesone/app/exception/RestResponseEntityExceptionHandler.class
-com/solutionesone/app/service/dto/InputDTO$InputDTOBuilder.class

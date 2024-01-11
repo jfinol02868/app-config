@@ -15,7 +15,7 @@ import java.io.Serializable;
 @Document(value = "inputs")
 public class InputDocument implements Serializable {
 
-    @Id
+    @MongoId
     private String id;
     private String type;
     private String name;
