@@ -4,20 +4,20 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.DocumentReference;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
 import java.util.List;
-
 
 @Data
 @Builder
 @AllArgsConstructor
 @Document(collection = "formConfigs")
-public class FormConfigDocument {
+public class GetFormConfigDocument {
 
-    @MongoId
-    private final String id;
-    private final String configName;
-    private final List<String> inputs;
-
+  @MongoId
+  private String id;
+  private String configName;
+  @DocumentReference(collection = "inputs", lazy = true)
+  private List<InputDocument> inputs;
 }

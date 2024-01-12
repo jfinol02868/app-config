@@ -20,4 +20,5 @@ public interface FormConfigMapper {
 
     public List<FormConfigDTO> toDTOs(List<FormConfig> formConfigs);
 
+
 }

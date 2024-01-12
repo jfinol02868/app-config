@@ -8,7 +8,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-01-11T18:47:02+0100",
+    date = "2024-01-12T01:46:55+0100",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.9 (Private Build)"
 )
 public class FormConfigMapperImpl implements FormConfigMapper {
@@ -21,11 +21,11 @@ public class FormConfigMapperImpl implements FormConfigMapper {
 
         FormConfig.FormConfigBuilder formConfig = FormConfig.builder();
 
-        formConfig.id( formConfigDTO.id() );
-        formConfig.configName( formConfigDTO.configName() );
-        List<String> list = formConfigDTO.inputIds();
+        formConfig.id( formConfigDTO.getId() );
+        formConfig.configName( formConfigDTO.getConfigName() );
+        List<String> list = formConfigDTO.getInputs();
         if ( list != null ) {
-            formConfig.inputIds( new ArrayList<String>( list ) );
+            formConfig.inputs( new ArrayList<String>( list ) );
         }
 
         return formConfig.build();
@@ -39,11 +39,11 @@ public class FormConfigMapperImpl implements FormConfigMapper {
 
         FormConfigDTO.FormConfigDTOBuilder formConfigDTO = FormConfigDTO.builder();
 
-        formConfigDTO.id( formConfig.id() );
-        formConfigDTO.configName( formConfig.configName() );
-        List<String> list = formConfig.inputIds();
+        formConfigDTO.id( formConfig.getId() );
+        formConfigDTO.configName( formConfig.getConfigName() );
+        List<String> list = formConfig.getInputs();
         if ( list != null ) {
-            formConfigDTO.inputIds( new ArrayList<String>( list ) );
+            formConfigDTO.inputs( new ArrayList<String>( list ) );
         }
 
         return formConfigDTO.build();

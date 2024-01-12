@@ -9,9 +9,9 @@ import java.util.List;
 @Data
 @Builder
 @AllArgsConstructor
-public class FormConfig{
+public class GetFormConfig {
 
     private String id;
     private String configName;
-    private List<String> inputs;
+    private List<Input> inputs;
 }

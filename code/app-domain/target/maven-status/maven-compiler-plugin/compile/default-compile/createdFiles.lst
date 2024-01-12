@@ -1,7 +1,9 @@
 com/solutionesone/app/domain/entity/FormConfig$FormConfigBuilder.class
 com/solutionesone/app/domain/exception/EntityNotFoundException.class
+com/solutionesone/app/domain/entity/GetFormConfig.class
 com/solutionesone/app/domain/entity/FormConfig.class
 com/solutionesone/app/domain/entity/repository/FormConfigRepository.class
 com/solutionesone/app/domain/entity/Input$InputBuilder.class
 com/solutionesone/app/domain/entity/Input.class
+com/solutionesone/app/domain/entity/GetFormConfig$GetFormConfigBuilder.class
 com/solutionesone/app/domain/entity/repository/InputRepository.class

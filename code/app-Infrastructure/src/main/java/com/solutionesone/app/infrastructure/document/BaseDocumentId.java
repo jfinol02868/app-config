@@ -1,4 +1,5 @@
 package com.solutionesone.app.infrastructure.document;
 
-public class BaseDocumentId {
+public interface BaseDocumentId {
+
 }
