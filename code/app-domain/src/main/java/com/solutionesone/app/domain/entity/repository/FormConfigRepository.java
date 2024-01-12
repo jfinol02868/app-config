@@ -12,4 +12,10 @@ public interface FormConfigRepository {
     public List<FormConfig> findAll();
 
     public List<GetFormConfig> findAllFormConfig();
+
+    public FormConfig getById(String id);
+
+    public Void deleteById(String id);
+
+    public  FormConfig update(FormConfig formConfig,  String id);
 }

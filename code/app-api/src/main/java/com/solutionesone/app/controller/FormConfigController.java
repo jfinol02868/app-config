@@ -3,6 +3,7 @@ package com.solutionesone.app.controller;
 import com.solutionesone.app.service.FormConfigApi;
 import com.solutionesone.app.service.dto.FormConfigDTO;
 import com.solutionesone.app.service.dto.GetFormConfigDTO;
+import com.solutionesone.app.service.dto.InputDTO;
 import com.solutionesone.app.useCase.FormConfigUseCase;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,17 +28,38 @@ public class FormConfigController implements FormConfigApi {
     @Override
     public ResponseEntity<FormConfigDTO> createFormConfig(FormConfigDTO formConfigDTO) {
         return new ResponseEntity<>(
-                formConfigMapper.toDTO(formConfigUseCase.save(formConfigMapper.toEntity(formConfigDTO)))
-                , HttpStatus.CREATED);
+                formConfigMapper.toDTO(formConfigUseCase.save(formConfigMapper.toEntity(formConfigDTO))),
+                HttpStatus.CREATED);
     }
 
     @Override
     public ResponseEntity<List<FormConfigDTO>> getFormConfig() {
-        return new ResponseEntity<>(formConfigMapper.toDTOs(formConfigUseCase.getAll()), HttpStatus.OK);
+        return new ResponseEntity<>(formConfigMapper.toDTOs(formConfigUseCase.getAll()),
+                HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<List<GetFormConfigDTO>> getAllFormConfig() {
-        return new ResponseEntity<>(getFormConfigMapper.toDTOs(formConfigUseCase.getFormConfig()), HttpStatus.OK);
+        return new ResponseEntity<>(getFormConfigMapper.toDTOs(formConfigUseCase.getFormConfig()),
+                HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<FormConfigDTO> getInputById(String id) {
+        return new ResponseEntity<FormConfigDTO>(formConfigMapper.toDTO(formConfigUseCase.getById(id)),
+                HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<FormConfigDTO> updateInput(FormConfigDTO formConfigDTO, String id) {
+        return new ResponseEntity<FormConfigDTO>(formConfigMapper.toDTO(
+                formConfigUseCase.update(formConfigMapper.toEntity(formConfigDTO), id)),
+                HttpStatus.CREATED);
+    }
+
+    @Override
+    public ResponseEntity<Void> deleteInputById(String id) {
+        return new ResponseEntity<>(formConfigUseCase.deleteById(id),
+                HttpStatus.NO_CONTENT);
     }
 }

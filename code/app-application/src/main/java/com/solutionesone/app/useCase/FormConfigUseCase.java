@@ -12,4 +12,10 @@ public interface FormConfigUseCase {
     public List<FormConfig> getAll();
 
     public List<GetFormConfig> getFormConfig();
+
+    public FormConfig getById(String id);
+
+    public Void deleteById(String id);
+
+    public  FormConfig update(FormConfig formConfig,  String id);
 }

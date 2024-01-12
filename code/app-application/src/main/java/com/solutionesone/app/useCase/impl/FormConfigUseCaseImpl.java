@@ -31,4 +31,19 @@ public class FormConfigUseCaseImpl implements FormConfigUseCase {
     public List<GetFormConfig> getFormConfig() {
         return formConfigRepository.findAllFormConfig();
     }
+
+    @Override
+    public FormConfig getById(String id) {
+        return formConfigRepository.getById(id);
+    }
+
+    @Override
+    public Void deleteById(String id) {
+        return formConfigRepository.deleteById(id);
+    }
+
+    @Override
+    public FormConfig update(FormConfig formConfig, String id) {
+        return formConfigRepository.update(formConfig, id);
+    }
 }

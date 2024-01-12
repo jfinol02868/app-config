@@ -9,7 +9,6 @@ com/solutionesone/app/infrastructure/document/FormConfigDocument$FormConfigDocum
 com/solutionesone/app/infrastructure/document/GetFormConfigDocument$GetFormConfigDocumentBuilder.class
 com/solutionesone/app/infrastructure/repository/impl/InputRepositoryImpl.class
 com/solutionesone/app/infrastructure/mapper/FormConfigDocumentMapperImpl.class
-com/solutionesone/app/infrastructure/document/BaseDocumentId.class
 com/solutionesone/app/infrastructure/repository/impl/FormConfigDocumentRepositoryImpl.class
 com/solutionesone/app/infrastructure/document/FormConfigDocument.class
 com/solutionesone/app/infrastructure/repository/FormConfigDocumentRepository2.class
