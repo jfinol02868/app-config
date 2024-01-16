@@ -72,7 +72,7 @@ public interface FormConfigApi {
     @ApiResponse(responseCode = "403", content = @Content(mediaType = CONTENT_RESPONSE, array = @ArraySchema(schema = @Schema(implementation = OperationResponse.class))))
     @ApiResponse(responseCode = "404", content = @Content(mediaType = CONTENT_RESPONSE, array = @ArraySchema(schema = @Schema(implementation = OperationResponse.class))))
     @ApiResponse(responseCode = "500", content = @Content(mediaType = CONTENT_RESPONSE, array = @ArraySchema(schema = @Schema(implementation = OperationResponse.class))))
-    default ResponseEntity<FormConfigDTO> updateInput(@RequestBody FormConfigDTO formConfigDTO, @PathVariable String id) {
+    default ResponseEntity<FormConfigDTO> updateFormConfig(@RequestBody FormConfigDTO formConfigDTO, @PathVariable String id) {
         return new ResponseEntity<FormConfigDTO>(HttpStatus.NOT_IMPLEMENTED);
     }
 

@@ -1,7 +1,7 @@
 package com.solutionesone.app.input.mappers;
 
 import com.solutionesone.app.domain.entity.Input;
-import com.solutionesone.app.mapper.InputMapper;
+import com.solutionesone.app.mapper.InputDTOMapper;
 import com.solutionesone.app.service.dto.InputDTO;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
@@ -12,11 +12,11 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertAll;
 
 @SpringBootTest
-public class InputMapperTest {
+public class InputDTOMapperTest {
 
     @Test
     @DisplayName("Input to InputDTO.")
-    public void shouldMapInputToDtoTest() {
+    public void mapInputToDtoTest() {
         //Arrange
         Input input = Input.builder()
                 .id("1")
@@ -37,7 +37,7 @@ public class InputMapperTest {
                 .method("GET")
                 .build();
         //Act
-        InputDTO inputDTO = InputMapper.inputMapper.toDTO(input);
+        InputDTO inputDTO = InputDTOMapper.inputDTOMapper.toDTO(input);
 
         //Assert
         assertNotNull(inputDTO);
@@ -63,7 +63,7 @@ public class InputMapperTest {
 
     @Test
     @DisplayName("InputDTO to Input.")
-    public void shouldMapDtoToEntityTest() {
+    public void mapDtoToEntityTest() {
         //Arrange
         InputDTO inputDTO = InputDTO.builder()
                 .id("1")
@@ -84,7 +84,7 @@ public class InputMapperTest {
                 .method("GET")
                 .build();
         //Act
-        Input input = InputMapper.inputMapper.toEntity(inputDTO);
+        Input input = InputDTOMapper.inputDTOMapper.toEntity(inputDTO);
 
         //Assert
         assertNotNull(input);

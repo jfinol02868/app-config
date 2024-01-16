@@ -4,13 +4,12 @@ import com.solutionesone.app.domain.entity.Input;
 import com.solutionesone.app.domain.entity.repository.InputRepository;
 import com.solutionesone.app.infrastructure.document.InputDocument;
 import com.solutionesone.app.infrastructure.repository.InputDocumentRepository;
-import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
-import static com.solutionesone.app.infrastructure.mapper.InputMapper.inputMapper;
+import static com.solutionesone.app.infrastructure.mapper.InputDocumentMapper.inputDocumentMapper;
 
 @Repository
 public class InputRepositoryImpl implements InputRepository {
@@ -23,12 +22,12 @@ public class InputRepositoryImpl implements InputRepository {
 
     @Override
     public Input save(Input input) {
-        return inputMapper.toEntity(inputDocumentRepository.save(inputMapper.toDocument(input)));
+        return inputDocumentMapper.toEntity(inputDocumentRepository.save(inputDocumentMapper.toDocument(input)));
     }
 
     @Override
     public List<Input> getAllInputs() {
-        return inputMapper.toEntities(inputDocumentRepository.findAll());
+        return inputDocumentMapper.toEntities(inputDocumentRepository.findAll());
     }
 
     @Override
@@ -37,7 +36,7 @@ public class InputRepositoryImpl implements InputRepository {
         if(inputDocument.isEmpty()) {
             throw new com.solutionesone.app.domain.exception.EntityNotFoundException("N100", "Registro no encontrado");
         }
-        return inputMapper.toEntity(inputDocument.get());
+        return inputDocumentMapper.toEntity(inputDocument.get());
     }
 
     @Override
@@ -46,7 +45,7 @@ public class InputRepositoryImpl implements InputRepository {
         if(inputDocument.isEmpty()) {
             throw new com.solutionesone.app.domain.exception.EntityNotFoundException("N100", "Registro no encontrado");
         }
-        return inputMapper.toEntity(inputDocumentRepository.save(inputMapper.toDocument(input)));
+        return inputDocumentMapper.toEntity(inputDocumentRepository.save(inputDocumentMapper.toDocument(input)));
     }
 
     @Override

@@ -8,9 +8,9 @@ import org.mapstruct.factory.Mappers;
 import java.util.List;
 
 @Mapper
-public interface InputMapper {
+public interface InputDTOMapper {
 
-    static InputMapper inputMapper = Mappers.getMapper(InputMapper.class);
+    static InputDTOMapper inputDTOMapper = Mappers.getMapper(InputDTOMapper.class);
 
     public InputDTO toDTO(Input input);
 

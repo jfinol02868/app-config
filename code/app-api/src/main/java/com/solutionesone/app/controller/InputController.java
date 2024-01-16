@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-import static com.solutionesone.app.mapper.InputMapper.inputMapper;
+import static com.solutionesone.app.mapper.InputDTOMapper.inputDTOMapper;
 
 @RestController
 @RequestMapping("/inputs")
@@ -25,17 +25,17 @@ public class InputController implements InputApi {
     @Override
     public ResponseEntity<InputDTO> createInput(InputDTO inputDTO) {
         return new ResponseEntity<InputDTO>(
-                inputMapper.toDTO(inputUseCase.create(inputMapper.toEntity(inputDTO))), HttpStatus.CREATED);
+                inputDTOMapper.toDTO(inputUseCase.create(inputDTOMapper.toEntity(inputDTO))), HttpStatus.CREATED);
     }
 
     @Override
     public ResponseEntity<List<InputDTO>> getAllInputs() {
-        return new ResponseEntity<List<InputDTO>>(inputMapper.toDTOs(inputUseCase.getAllInputs()), HttpStatus.OK);
+        return new ResponseEntity<List<InputDTO>>(inputDTOMapper.toDTOs(inputUseCase.getAllInputs()), HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<InputDTO> getInputById(String id) {
-        return new ResponseEntity<InputDTO>(inputMapper.toDTO(inputUseCase.getInputById(id)), HttpStatus.OK);
+        return new ResponseEntity<InputDTO>(inputDTOMapper.toDTO(inputUseCase.getInputById(id)), HttpStatus.OK);
     }
 
     @Override
@@ -46,6 +46,6 @@ public class InputController implements InputApi {
     @Override
     public ResponseEntity<InputDTO> updateInput(InputDTO inputDTO, String id) {
         return new ResponseEntity<InputDTO>(
-                inputMapper.toDTO(inputUseCase.updateInput(id, inputMapper.toEntity(inputDTO))), HttpStatus.CREATED);
+                inputDTOMapper.toDTO(inputUseCase.updateInput(id, inputDTOMapper.toEntity(inputDTO))), HttpStatus.CREATED);
     }
 }

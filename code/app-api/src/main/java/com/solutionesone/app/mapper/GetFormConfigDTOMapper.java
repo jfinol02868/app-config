@@ -8,9 +8,9 @@ import org.mapstruct.factory.Mappers;
 import java.util.List;
 
 @Mapper
-public interface GetFormConfigMapper {
+public interface GetFormConfigDTOMapper {
 
-    static GetFormConfigMapper getFormConfigMapper = Mappers.getMapper(GetFormConfigMapper.class);
+    static GetFormConfigDTOMapper getFormConfigDTOMapper = Mappers.getMapper(GetFormConfigDTOMapper.class);
 
     public List<GetFormConfig> toEntities(List<GetFormConfigDTO> getFormConfigDTOS);
 

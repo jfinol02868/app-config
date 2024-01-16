@@ -8,9 +8,9 @@ import org.mapstruct.factory.Mappers;
 import java.util.List;
 
 @Mapper
-public interface InputMapper {
+public interface InputDocumentMapper {
 
-    static InputMapper inputMapper = Mappers.getMapper(InputMapper.class);
+    static InputDocumentMapper inputDocumentMapper = Mappers.getMapper(InputDocumentMapper.class);
 
     public InputDocument toDocument(Input input);
 

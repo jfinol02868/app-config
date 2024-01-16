@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static com.solutionesone.app.infrastructure.mapper.InputMapper.inputMapper;
+import static com.solutionesone.app.infrastructure.mapper.InputDocumentMapper.inputDocumentMapper;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertAll;
@@ -37,7 +37,7 @@ public class InputMapperTest {
                 .method("GET")
                 .build();
         //Act
-        InputDocument inputDocument = inputMapper.toDocument(input);
+        InputDocument inputDocument = inputDocumentMapper.toDocument(input);
 
         //Assert
         assertNotNull(inputDocument);
@@ -84,7 +84,7 @@ public class InputMapperTest {
                 .method("GET")
                 .build();
         //Act
-        Input input = inputMapper.toEntity(inputDocument);
+        Input input = inputDocumentMapper.toEntity(inputDocument);
 
         //Assert
         assertNotNull(input);
