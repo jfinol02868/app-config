@@ -5,6 +5,7 @@ import com.solutionesone.app.domain.entity.Input;
 import com.solutionesone.app.service.dto.GetFormConfigDTO;
 import com.solutionesone.app.service.dto.InputDTO;
 import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
@@ -18,6 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 public class GetFormConfigDTOMapperTest {
 
     @Test
+    @DisplayName(value = "Map Get Form Config DTO To Entity.")
     public void mapGetFormConfigDTOToEntity() {
 
         List<GetFormConfigDTO> getFormConfigDTOs = List.of(GetFormConfigDTO.builder()
@@ -52,12 +54,33 @@ public class GetFormConfigDTOMapperTest {
                 assertAll(
                             () -> assertEquals("1", x.getId()),
                             () ->assertEquals("login", x.getConfigName()),
-                            () -> assertEquals(1, x.getInputs().size())
+                            () -> assertEquals(1, x.getInputs().size()),
+                            () -> x.getInputs().forEach( y ->
+                                        assertAll(
+                                                () -> assertEquals("1", y.getId()),
+                                                () -> assertEquals("name", y.getName()),
+                                                () -> assertEquals("text", y.getType()),
+                                                () -> assertEquals("id-name", y.getInputId()),
+                                                () -> assertEquals("Name", y.getPlaceHolder()),
+                                                () -> assertEquals("send", y.getValue()),
+                                                () -> assertEquals("0", y.getMinLength()),
+                                                () -> assertEquals("100", y.getMaxLength()),
+                                                () -> assertEquals("A-Za-z]{3}", y.getPattern()),
+                                                () -> assertEquals("2023-05-01", y.getMax()),
+                                                () -> assertEquals("199-01-01", y.getMin()),
+                                                () -> assertEquals("main", y.getAlt()),
+                                                () -> assertEquals("www.youtube.com", y.getSrc()),
+                                                () -> assertEquals("_blank", y.getFormTarget()),
+                                                () -> assertEquals("/action_page.php", y.getAction()),
+                                                () -> assertEquals("GET", y.getMethod())
+                                        )
+                                )
                         )
                 );
     }
 
     @Test
+    @DisplayName(value = "Map Get Form Config Entity To DTO.")
     public void mapGetFormConfigEntityToDTO() {
 
         List<GetFormConfig> getFormConfigs = List.of(GetFormConfig.builder()
@@ -92,7 +115,27 @@ public class GetFormConfigDTOMapperTest {
                 assertAll(
                         () -> assertEquals("1", x.getId()),
                         () ->assertEquals("login", x.getConfigName()),
-                        () -> assertEquals(1, x.getInputs().size())
+                        () -> assertEquals(1, x.getInputs().size()),
+                        () -> x.getInputs().forEach( y ->
+                                assertAll(
+                                        () -> assertEquals("1", y.getId()),
+                                        () -> assertEquals("name", y.getName()),
+                                        () -> assertEquals("text", y.getType()),
+                                        () -> assertEquals("id-name", y.getInputId()),
+                                        () -> assertEquals("Name", y.getPlaceHolder()),
+                                        () -> assertEquals("send", y.getValue()),
+                                        () -> assertEquals("0", y.getMinLength()),
+                                        () -> assertEquals("100", y.getMaxLength()),
+                                        () -> assertEquals("A-Za-z]{3}", y.getPattern()),
+                                        () -> assertEquals("2023-05-01", y.getMax()),
+                                        () -> assertEquals("199-01-01", y.getMin()),
+                                        () -> assertEquals("main", y.getAlt()),
+                                        () -> assertEquals("www.youtube.com", y.getSrc()),
+                                        () -> assertEquals("_blank", y.getFormTarget()),
+                                        () -> assertEquals("/action_page.php", y.getAction()),
+                                        () -> assertEquals("GET", y.getMethod())
+                                )
+                        )
                 )
         );
     }
