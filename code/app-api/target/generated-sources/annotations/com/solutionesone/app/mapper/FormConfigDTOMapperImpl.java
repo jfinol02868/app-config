@@ -8,8 +8,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-01-19T16:36:44+0100",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.9 (Private Build)"
+    date = "2024-03-11T20:21:03+0100",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.10 (Private Build)"
 )
 public class FormConfigDTOMapperImpl implements FormConfigDTOMapper {
 

@@ -1,0 +1,12 @@
+/home/jfinol02/Documentos/dev/app-config/code/app-api/src/main/java/com/solutionesone/app/service/dto/GetFormConfigDTO.java
+/home/jfinol02/Documentos/dev/app-config/code/app-api/src/main/java/com/solutionesone/app/controller/FormConfigController.java
+/home/jfinol02/Documentos/dev/app-config/code/app-api/src/main/java/com/solutionesone/app/service/dto/InputDTO.java
+/home/jfinol02/Documentos/dev/app-config/code/app-api/src/main/java/com/solutionesone/app/mapper/GetFormConfigDTOMapper.java
+/home/jfinol02/Documentos/dev/app-config/code/app-api/src/main/java/com/solutionesone/app/service/FormConfigApi.java
+/home/jfinol02/Documentos/dev/app-config/code/app-api/src/main/java/com/solutionesone/app/service/dto/FormConfigDTO.java
+/home/jfinol02/Documentos/dev/app-config/code/app-api/src/main/java/com/solutionesone/app/mapper/InputDTOMapper.java
+/home/jfinol02/Documentos/dev/app-config/code/app-api/src/main/java/com/solutionesone/app/mapper/FormConfigDTOMapper.java
+/home/jfinol02/Documentos/dev/app-config/code/app-api/src/main/java/com/solutionesone/app/service/InputApi.java
+/home/jfinol02/Documentos/dev/app-config/code/app-api/src/main/java/com/solutionesone/app/exception/RestResponseEntityExceptionHandler.java
+/home/jfinol02/Documentos/dev/app-config/code/app-api/src/main/java/com/solutionesone/app/controller/InputController.java
+/home/jfinol02/Documentos/dev/app-config/code/app-api/src/main/java/com/solutionesone/app/service/dto/OperationResponse.java
