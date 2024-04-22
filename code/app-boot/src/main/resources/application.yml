@@ -5,3 +5,19 @@ spring-doc:
   swagger-ui:
     path: /web/swagger.html
     #http://localhost:3030/swagger-ui-custom.html
+
+spring:
+  data:
+    mongodb:
+      database: micro
+      username: jfinol02
+      password: jfinol02
+      host: localhost
+      port: 27017
+
+#  main:
+#    allow-bean-definition-overriding: true
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration

@@ -10,7 +10,6 @@
     <artifactId>app-boot</artifactId>
     <packaging>jar</packaging>
 
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -19,6 +18,18 @@
         <dependency>
             <groupId>com.solutionesone.app</groupId>
             <artifactId>app-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.solutionesone.app</groupId>
+            <artifactId>app-application</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.solutionesone.app</groupId>
+            <artifactId>app-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.solutionesone.app</groupId>
+            <artifactId>app-infrastructure</artifactId>
         </dependency>
     </dependencies>
 </project>

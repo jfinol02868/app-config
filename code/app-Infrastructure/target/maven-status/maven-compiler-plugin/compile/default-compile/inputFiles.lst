@@ -1,0 +1,11 @@
+/home/jfinol02/Documentos/dev/app-config/code/app-Infrastructure/src/main/java/com/solutionesone/app/infrastructure/document/FormConfigDocument.java
+/home/jfinol02/Documentos/dev/app-config/code/app-Infrastructure/src/main/java/com/solutionesone/app/infrastructure/repository/InputDocumentRepository.java
+/home/jfinol02/Documentos/dev/app-config/code/app-Infrastructure/src/main/java/com/solutionesone/app/infrastructure/mapper/InputDocumentMapper.java
+/home/jfinol02/Documentos/dev/app-config/code/app-Infrastructure/src/main/java/com/solutionesone/app/infrastructure/repository/impl/InputRepositoryImpl.java
+/home/jfinol02/Documentos/dev/app-config/code/app-Infrastructure/src/main/java/com/solutionesone/app/infrastructure/repository/GetFormConfigDocumentRepository.java
+/home/jfinol02/Documentos/dev/app-config/code/app-Infrastructure/src/main/java/com/solutionesone/app/infrastructure/document/InputDocument.java
+/home/jfinol02/Documentos/dev/app-config/code/app-Infrastructure/src/main/java/com/solutionesone/app/infrastructure/repository/FormConfigDocumentRepository2.java
+/home/jfinol02/Documentos/dev/app-config/code/app-Infrastructure/src/main/java/com/solutionesone/app/infrastructure/repository/impl/FormConfigDocumentRepositoryImpl.java
+/home/jfinol02/Documentos/dev/app-config/code/app-Infrastructure/src/main/java/com/solutionesone/app/infrastructure/mapper/GetFormConfigDocumentMapper.java
+/home/jfinol02/Documentos/dev/app-config/code/app-Infrastructure/src/main/java/com/solutionesone/app/infrastructure/mapper/FormConfigDocumentMapper.java
+/home/jfinol02/Documentos/dev/app-config/code/app-Infrastructure/src/main/java/com/solutionesone/app/infrastructure/document/GetFormConfigDocument.java
